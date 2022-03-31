@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service WikipediaDistance {
+  rpc Distance (DistanceRequest) returns (DistanceReply) {}
+}
+
+message DistanceRequest {
+  string source_url = 1;
+  string target_url = 2;
+}
+
+message DistanceReply {
+  repeated string path = 1;
+}
