@@ -1,10 +1,10 @@
 import typing as tp
 from collections import deque
 
+from yarl import URL
+
 from src.wikipedia.url_parsing import wikipedia_url_parsing
 from src.wikipedia.utils import is_wikipedia_url
-
-from yarl import URL
 
 
 async def wikipedia_distance(
