@@ -1,6 +1,6 @@
 # Wikipedia distance. Rabbit MQ
 
-This is Rabbit MQ practice. Using python3.9.
+This is RabbitMQ practice. Using python3.9.
 
 ## Install python3.9(Ubuntu/Debian)
 ```bash
@@ -14,7 +14,7 @@ make requirements
 ```
 
 ## Worker
-To run Rabbit MQ worker
+To run RabbitMQ worker
 ```bash
 RUN_ARGS="--host localhost --port 5672 --queue rabbitmqqueue" make worker
 ```
@@ -32,7 +32,7 @@ RUN_ARGS="--host 0.0.0.0 --port 50051" make client
 ```
 
 ## Docker image
-To start the Rabbit MQ, gRPC server and one worker you can use Docker image:
+To start the RabbitMQ, gRPC server and one worker you can use Docker image:
 ```bash
 docker run --rm -it -p 15672:15672 -p 5672:5672 -p 50051:50051 ch0p1k/rabbit-mq:latest
 ```
