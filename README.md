@@ -8,7 +8,7 @@ make install_python3.9
 ```
 
 ## Requirements
-For installing requirements type:
+For installing requirements:
 ```bash
 make requirements
 ```
