@@ -78,9 +78,6 @@ class WikipediaDistance(service_pb2_grpc.WikipediaDistanceServicer):
             exchange='',
             routing_key=self._rabbitmq_queue,
             properties=pika.BasicProperties(
-                
-                
-                
                 reply_to=self._callback_queue,
                 correlation_id=self._corr_id,
             ),
