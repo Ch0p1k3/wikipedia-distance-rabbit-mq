@@ -87,6 +87,7 @@ async def run(host: str, port: int) -> None:
             print(e, flush=True)
             continue
 
+        print(f"Path length: {len(reply)}", flush=True)
         print("Path:", flush=True)
         print("- ", end='')
         print(*reply, sep="\n- ")
